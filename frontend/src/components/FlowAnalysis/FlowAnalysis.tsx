@@ -13,7 +13,7 @@ const FlowAnalysis = () => {
 									Sheet name
 								</th>
 								<th className="font-bold capitalize border px-4 py-2">
-									Count Cell
+									No of water flow cell
 								</th>
 							</tr>
 						</thead>

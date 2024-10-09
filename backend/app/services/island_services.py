@@ -3,6 +3,8 @@ from typing import List
 def analyze_water_flow(grid: List[List[int]]):
     rows = len(grid)
     cols = len(grid[0])
+
+    # Directions array for DFS (up, down, left, right)
     directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
     def dfs(row, col, visited, prev_height):
@@ -13,6 +15,7 @@ def analyze_water_flow(grid: List[List[int]]):
         for dx, dy in directions:
             dfs(row + dx, col + dy, visited, grid[row][col])
 
+    # Initialize the NW and SE grids to store boolean values
     northwest_visited = [[False] * cols for _ in range(rows)]
     southeast_visited = [[False] * cols for _ in range(rows)]
 

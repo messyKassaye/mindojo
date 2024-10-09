@@ -10,10 +10,6 @@ This assessment is created with Docker container and Manual installation as well
 
    You can run this project with two ways of method. These are **Docker** and **Manual installation**
 
-   **Note**
-
-   please change all **.env.example** file into **.env**. After changing please provide your API key with your own API key
-
    ### 1. Docker installation
 
    #### Prerequisites

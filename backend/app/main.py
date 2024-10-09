@@ -35,10 +35,11 @@ async def upload_file(file: UploadFile = File(...)):
         grid = []
         for row in worksheet.iter_rows(values_only=True):
             grid.append(list(row))
+            
         
-        # convert the grid into integers
+        # convert the grid into integers of 2D array
         grid = [[int(cell) for cell in row] for row in grid]
-
+        print(grid)
         result = analyze_water_flow(grid)
         results.append({
             'sheet_name':sheet,
